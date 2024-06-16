@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |i|
+  Todo.create(
+    title: "Todo #{i + 1}",
+    description: "This is the description for Todo #{i + 1}",
+    completed: [true, false].sample
+  )
+end
